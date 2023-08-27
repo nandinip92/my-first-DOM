@@ -1,0 +1,38 @@
+:root {
+  --light: #ecf0f1;
+  --dark: #bb8fce;
+  --green: #2ecc71;
+  --red: #ff0000;
+}
+body {
+  background-color: var(--light);
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.input-container {
+  position: relative;
+  font-size: 1.5rem;
+}
+
+input {
+  height: 2rem;
+  width: 15rem;
+  border: 0.1rem solid #c0c0c0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  padding: 16px;
+}
+input:focus {
+  outline: none;
+  border: 1rem solid blue;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 16px;
+  display: flex;
+  align-items: center;
+}
