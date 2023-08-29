@@ -12,7 +12,8 @@ body {
 
 .input-container {
   position: relative;
-  font-size: 1.5rem;
+  display: flex;
+  justify-content: center;
 }
 
 input {
@@ -36,11 +37,18 @@ input:focus {
   display: flex;
   align-items: center;
 }
-
-.progress_bar {
-  display: inline-block;
-  position: relative;
+.tags {
+  font-size: 1.2rem;
 }
+.progress_bar span {
+  position: absolute;
+  display: inline-block;
+  color: wheat;
+}
+/* .progress_bar {
+  position: relative;
+  justify-content: center;
+} */
 
 progress[value] {
   /* Reset the default appearance */
@@ -48,7 +56,7 @@ progress[value] {
   -moz-appearance: none;
   appearance: none;
 
-  height: 0.8rem;
+  height: 1rem;
   width: 15rem;
 }
 

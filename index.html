@@ -10,10 +10,15 @@
   <body>
     <h1>How good is your password?</h1>
     <div class="input-container">
-      <label class="tags" password">Password</label>
-      <input type="text" id="password" oninput="checkPassword()"/>
-      <label for="pwd_progress"></label>
-      <progress class= "progress_bar" id="pwd_progress_bar" max="100" value="0">0%</progress>
+      <div class="pwd_textbox">
+        <label class="tags" password">Password</label>
+        <input type="text" id="password" oninput="checkPassword()"/>
+      </div>
+      <div class="progress_bar"> 
+        <label for="pwd_progress"></label>
+        <span id="pwd_strength"></span>
+        <progress id="pwd_progress_bar" max="100" value="0">0%</progress>
+      </div>
     </div>
     <script src="index.js"></script>
   </body>
