@@ -4,14 +4,14 @@ const updatePasswordProgressBar = (length) => {
   // So for this 5n*(n+1)/2
   sum = (5 * length * (length + 1)) / 2;
   document.getElementById("pwd_progress_bar").value = sum;
+
   updateProgressBarColor(length);
 };
 
 const updateProgressBarColor = (length) => {
   const progress = document.getElementById("pwd_progress_bar");
-  if (length < 8) progress.style.setProperty("--c", "red");
-  else if (length < 12) progress.style.setProperty("--c", "orange");
-  else progress.style.setProperty("--c", "green");
+  const color = length < 8 ? "red" : length < 12 ? "orange" : "green";
+  progress.style.setProperty("--c", color);
 };
 
 const checkPassword = () => {
