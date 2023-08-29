@@ -67,7 +67,8 @@ progress[value]::-webkit-progress-bar {
 }
 
 progress[value]::-webkit-progress-value {
-  /* background-image: -webkit-linear-gradient(
+  /* //Gradient texture
+  background-image: -webkit-linear-gradient(
       -45deg,
       transparent 33%,
       rgba(0, 0, 0, 0.1) 33%,
@@ -79,5 +80,12 @@ progress[value]::-webkit-progress-value {
 
   border-radius: 2px;
   background-size: 35px 20px, 100% 100%, 100% 100%; */
+  background-color: var(--c, blue);
+}
+
+progress[value]::-moz-progress-bar {
+  background-color: #eee;
+  border-radius: 2px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.25) inset;
   background-color: var(--c, blue);
 }
