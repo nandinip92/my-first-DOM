@@ -11,11 +11,11 @@
     <h1>How good is your password?</h1>
     <div class="input-container">
       <div class="pwd_textbox">
-        <label class="tags" password">Password</label>
-        <input type="password" id="password" oninput="checkPassword()"/>
+        <label class="tags" for="password">Password</label>
+        <input type="password" id="password" oninput="checkPassword()" />
       </div>
-      <div class="progress_bar"> 
-        <label for="pwd_progress"></label>
+      <div class="progress_bar">
+        <label class="tags" for="pwd_progress_bar"></label>
         <span id="pwd_strength"></span>
         <progress id="pwd_progress_bar" max="100" value="0">0%</progress>
       </div>
