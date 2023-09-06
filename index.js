@@ -28,3 +28,5 @@ const checkPassword = () => {
   console.log(password.length);
   updatePasswordProgressBar(password.length);
 };
+
+document.getElementById("password").addEventListener("input", checkPassword);
